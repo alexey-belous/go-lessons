@@ -3,6 +3,7 @@ package main // for all executable files
 import (
 	"fmt"           // formatting
 	"hello/lesson1" // custom package
+	"hello/lesson2"
 	"os"
 	"runtime"
 )
@@ -22,4 +23,5 @@ func main() {
 	fmt.Println("Current user:", os.Getenv("USERNAME"))
 
 	lesson1.Varentry()
+	lesson2.Lesson2Entry()
 }

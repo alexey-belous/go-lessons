@@ -14,6 +14,10 @@ var (
 )
 
 const g = 10 // joke
+const (
+	c1 = 1
+	c2 = 2
+)
 
 // Varentry Entry point to the varibales package
 func Varentry() {
