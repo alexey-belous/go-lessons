@@ -7,10 +7,13 @@ import (
 
 // Without initialization variables have 0 (GLOBAL VARIABLES)
 var (
-	name, course string
-	module       float64
-	moduleB      = 3.2
+	name    string
+	course  = "test course 1"
+	module  float64
+	moduleB = 3.2
 )
+
+const g = 10 // joke
 
 // Varentry Entry point to the varibales package
 func Varentry() {
@@ -35,4 +38,24 @@ func Varentry() {
 	ptr := &c
 	fmt.Println("Memory address of *c* is", ptr)
 	fmt.Println("*c* by ptr:", *ptr)
+
+	// Function arguments:
+	fmt.Println("course=", course)
+	course2 := changeVariable(course)
+	fmt.Println("course=", course)
+	fmt.Println("course2=", course2)
+
+	fmt.Println("course=", course)
+	changeVariableByRef(&course)
+	fmt.Println("course=", course)
+}
+
+func changeVariable(course string) string {
+	course = "test course 2"
+	fmt.Println("changeVariable: course=", course)
+	return course
+}
+
+func changeVariableByRef(course *string) {
+	*course = "test course 2"
 }
