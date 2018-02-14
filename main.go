@@ -5,6 +5,7 @@ import (
 	"hello/lesson1" // custom package
 	"hello/lesson2"
 	"hello/lesson7"
+	"hello/lesson8"
 	"os"
 	"runtime"
 )
@@ -26,4 +27,5 @@ func main() {
 	lesson1.Varentry()
 	lesson2.Lesson2Entry()
 	lesson7.Entry()
+	lesson8.Entry()
 }
