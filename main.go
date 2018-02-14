@@ -6,6 +6,7 @@ import (
 	"hello/lesson2"
 	"hello/lesson7"
 	"hello/lesson8"
+	"hello/lesson9"
 	"os"
 	"runtime"
 )
@@ -28,4 +29,5 @@ func main() {
 	lesson2.Lesson2Entry()
 	lesson7.Entry()
 	lesson8.Entry()
+	lesson9.Entry()
 }
